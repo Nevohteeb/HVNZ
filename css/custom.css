@@ -270,3 +270,27 @@ p {
 	box-shadow: 5px 5px 29px #a4a7a8,
               -5px  -5px 29px #ffffff;
 }
+
+/* AUTO & TURBO MODE BUTTONS */
+.auto-cont,
+.turbo-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+}
+
+.auto-mode-btn,
+.turbo-mode-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	background-color: #157EBD;
+	height: 8vh;
+	border-radius: 30px;
+}
+
+.btn-text {
+	color: white;
+}
