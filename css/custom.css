@@ -75,7 +75,7 @@ p {
   font-size: 1em;
 }
 
-/* HOMESCREEN CUSTOM CSS BEGINS */
+/* HOMESCREEN HEADER */
 
 .logo-container {
   height: 20vh;
@@ -88,6 +88,8 @@ p {
   height: 100%;
   text-align: center;
 }
+
+/* HOMESCREEN MENU BUTTONS */
 
 .menu-btn-top {
   display: flex;
@@ -150,7 +152,7 @@ p {
   padding: 0.1em;
 }
 
-/* HEATING PAGE CSS BEGINS */
+/* TOP NAV FOR MOBILE */
 
 .mobile-nav {
 	display: flex;
@@ -176,6 +178,8 @@ p {
 	color: white;
 }
 
+/* PAGE HEADERS ALIGNMENT */
+
 .page-hdr {
 	height: 8vh;
 	display: flex;
@@ -183,10 +187,6 @@ p {
 	justify-content: center;
 }
 
-.temp-dial-cont {
-	background-color: pink;
-	height: 30vh;
-}
 
 .section-sml-hdr {
 	display: flex;
@@ -195,7 +195,17 @@ p {
 	height: 4vh;
 }
 
-/* FAN SLIDER CSS BEGINS */
+/* TEMPERATURE DIAL */
+
+.temp-dial-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+	background-color: pink;
+}
+
+/* FAN SLIDER CSS */
 
 .fan-slider-cont {
 	display: flex;
@@ -253,7 +263,7 @@ p {
 
 /* FAN SLIDER CSS ENDS */
 
-/* BLADE BUTTON CSS BEGINS */
+/* BLADE BUTTON CSS */
 
 .blade-btns {
 	display: flex;
