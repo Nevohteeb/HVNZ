@@ -78,10 +78,12 @@ p {
 /* HOMESCREEN HEADER */
 
 .logo-container {
+	display: flex;
+	align-content: center;
+	justify-content: center;
   height: 20vh;
   margin-top: 5vh;
-  margin-bottom: 5vh;
-  margin-left: 2vh;
+	margin-bottom: 5vh;
 }
 
 .logo-full {
