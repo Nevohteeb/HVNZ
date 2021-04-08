@@ -66,14 +66,14 @@
     <h4>BLADE TILT</h4>
   </div>
   <div class="blade-btns">
-    <div class="blade-btn">
+    <div class="blade-btn" id="bladeStraight">
       <img src="img/blade-straight.svg" alt="Blade Straight">
     </div>
-    <div class="blade-btn">
-      <img src="img/blade-half.svg" alt="Blade Straight">
+    <div class="blade-btn" id="bladeHalf">
+      <img src="img/blade-half.svg" alt="Blade Half">
     </div>
-    <div class="blade-btn">
-      <img src="img/blade-full.svg" alt="Blade Straight">
+    <div class="blade-btn" id="bladeFull">
+      <img src="img/blade-full.svg" alt="Blade Full">
     </div>
   </div>
   <!-- BLADE SECTION ENDS -->
@@ -88,11 +88,27 @@
 
   <!-- JQUERRY IMPORTS -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
   <script src="js/jquery.knob.js"></script>
   <script>
     $(function() {
-      $(".dial").knob();
+      $(".dial").knob({
+        'min': 16,
+        'max': 30,
+        'width': '100%',
+        'angleOffset': 225,
+        'angleArc': 270,
+        'cursor': 10,
+        'fgColor': '#157EBD',
+        'inputColor': '#157EBD',
+        'bgColor': 'pink',
+        'format': function(value) {
+          return value + '°';
+        }
+      });
+
+      $('#bladeStraight').click(function() {
+        alert('I am working')
+      });
     });
   </script>
 

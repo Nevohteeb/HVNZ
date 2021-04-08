@@ -6,6 +6,12 @@ body {
   background-color: #edf2f4;
 }
 
+h1{
+	font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+}
+
 h3{
 	font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -144,6 +150,7 @@ p {
 
 
 .section-sml-hdr {
+	margin-top: 1em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -157,6 +164,31 @@ p {
 	align-items: center;
 	justify-content: center;
 	height: 30vh;
+}
+
+
+/* HOUSE & ROOF INFO BEGINS */
+
+.roofhouse-cont {
+	background-image: url(../img/house-bg.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+}
+
+.roof-temp-text {
+	color: #EA552F;
+	font-size: 3.5em;
+}
+
+.house-temp-text {
+	margin-top: 0.5em;
+	color: #157EBD;
+	font-size: 3.5em;
 }
 
 /* FAN SLIDER CSS */
@@ -241,6 +273,7 @@ p {
 /* AUTO & TURBO MODE BUTTONS */
 .auto-cont,
 .turbo-cont {
+	margin-top: 1em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
