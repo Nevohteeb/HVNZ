@@ -21,7 +21,7 @@
       </div>
     </a>
     <div class="nav-logo-cont">
-
+      <img src="img/hvnz-small-logo.png" class="nav-small-logo" alt="HVNZ Small Logo">
     </div>
     <div class="nav-btn-cont">
       <i class="fa fa-cog" aria-hidden="true"></i>
@@ -36,6 +36,7 @@
 
   <!-- TEMPERATURE DIAL BEGINS -->
   <div class="temp-dial-cont">
+    <input type="text" value="75" class="dial">
 
   </div>
   <!-- TEMPERATURE DIAL ENDS -->
@@ -65,9 +66,15 @@
     <h4>BLADE TILT</h4>
   </div>
   <div class="blade-btns">
-    <div class="blade-btn"></div>
-    <div class="blade-btn"></div>
-    <div class="blade-btn"></div>
+    <div class="blade-btn">
+      <img src="img/blade-straight.svg" alt="Blade Straight">
+    </div>
+    <div class="blade-btn">
+      <img src="img/blade-half.svg" alt="Blade Straight">
+    </div>
+    <div class="blade-btn">
+      <img src="img/blade-full.svg" alt="Blade Straight">
+    </div>
   </div>
   <!-- BLADE SECTION ENDS -->
 
@@ -80,6 +87,14 @@
   <!-- AUTO MODE BUTTON ENDS -->
 
   <!-- JQUERRY IMPORTS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+  <script src="js/jquery.knob.js"></script>
+  <script>
+    $(function() {
+      $(".dial").knob();
+    });
+  </script>
 
 
 </body>

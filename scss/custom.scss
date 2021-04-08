@@ -1,0 +1,263 @@
+@import "cssreset";
+
+/* CUSTOM CSS BEGINS */
+
+body {
+  background-color: #edf2f4;
+}
+
+h3{
+	font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+h4{
+	font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* HOMESCREEN HEADER */
+
+.logo-container {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+  height: 20vh;
+  margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.logo-full {
+  height: 100%;
+  text-align: center;
+}
+
+/* HOMESCREEN MENU BUTTONS */
+
+.menu-btn-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vh;
+}
+
+.menu-btn-mid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vh;
+}
+
+.menu-btn-btm {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vh;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #feffff, #d5dadc);
+  box-shadow: 10px 10px 29px #a4a7a8,
+              -10px  -10px 29px #ffffff;
+}
+
+.btn-link{
+  text-decoration: none;
+  color: black;
+}
+
+.btn-icon {
+  font-size: 4em;
+  padding: 0.1em;
+}
+
+.fa-fire,
+.fa-clock-o,
+.fa-sliders {
+  color: #EA552F;
+}
+
+.fa-refresh,
+.fa-plus {
+  color: #157EBD;
+}
+
+#settingsIcon {
+	color: #157EBD;
+	font-size: 4em;
+  padding: 0.1em;
+}
+
+/* TOP NAV FOR MOBILE */
+
+.mobile-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	height: 10vh;
+}
+
+.nav-btn-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #157EBD;
+	border-radius: 50px;
+	height: 7vh;
+	width: 7vh;
+}
+
+.nav-small-logo {
+	height: 8vh;
+}
+
+.fa-home,
+.fa-cog {
+	font-size: 2em;
+	color: white;
+}
+
+/* PAGE HEADERS ALIGNMENT */
+
+.page-hdr {
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.section-sml-hdr {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 4vh;
+}
+
+/* TEMPERATURE DIAL */
+
+.temp-dial-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+}
+
+/* FAN SLIDER CSS */
+
+.fan-slider-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+}
+
+.slide-cont {
+	width: 80%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+	box-shadow: 10px 10px 29px #a4a7a8,
+              -10px  -10px 29px #ffffff;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #157EBD;
+	box-shadow: 10px 10px 29px #a4a7a8,
+              -10px  -10px 29px #ffffff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #157EBD;
+	box-shadow: 10px 10px 29px #a4a7a8,
+              -10px  -10px 29px #ffffff;
+  cursor: pointer;
+}
+
+.fan-labels {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 2vh;
+}
+
+/* FAN SLIDER CSS ENDS */
+
+/* BLADE BUTTON CSS */
+
+.blade-btns {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 10vh;
+}
+
+.blade-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 8vh;
+	width: 8vh;
+	border-radius: 10px;
+	background: #edf2f4;
+	box-shadow: 5px 5px 29px #a4a7a8,
+              -5px  -5px 29px #ffffff;
+}
+
+/* AUTO & TURBO MODE BUTTONS */
+.auto-cont,
+.turbo-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+}
+
+.auto-mode-btn,
+.turbo-mode-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	background-color: #157EBD;
+	height: 8vh;
+	border-radius: 30px;
+}
+
+.btn-text {
+	color: white;
+}
