@@ -67,13 +67,13 @@
   </div>
   <div class="blade-btns">
     <div class="blade-btn" id="bladeStraight">
-      <img src="img/blade-straight.svg" alt="Blade Straight">
+      <img src="img/blade-straight.svg" alt="Blade Straight" id="bladeStraightSvg">
     </div>
     <div class="blade-btn" id="bladeHalf">
-      <img src="img/blade-half.svg" alt="Blade Half">
+      <img src="img/blade-half.svg" alt="Blade Half" id="bladeHalfSvg">
     </div>
     <div class="blade-btn" id="bladeFull">
-      <img src="img/blade-full.svg" alt="Blade Full">
+      <img src="img/blade-full.svg" alt="Blade Full" id="bladeFullSvg">
     </div>
   </div>
   <!-- BLADE SECTION ENDS -->
@@ -107,7 +107,24 @@
       });
 
       $('#bladeStraight').click(function() {
-        alert('I am working')
+        $('#bladeHalf').css('background-color', 'grey')
+        $('#bladeFull').css('background-color', 'grey')
+        $('#bladeHalfSvg').css('filter', 'grayscale(100%)')
+        $('#bladeFullSvg').css('filter', 'grayscale(100%)')
+      });
+
+      $('#bladeHalf').click(function() {
+        $('#bladeStraight').css('background-color', 'grey')
+        $('#bladeFull').css('background-color', 'grey')
+        $('#bladeStraightSvg').css('filter', 'grayscale(100%)')
+        $('#bladeFullSvg').css('filter', 'grayscale(100%)')
+      });
+
+      $('#bladeFull').click(function() {
+        $('#bladeStraight').css('background-color', 'grey')
+        $('#bladeHalf').css('background-color', 'grey')
+        $('#bladeStraightSvg').css('filter', 'grayscale(100%)')
+        $('#bladeHalfSvg').css('filter', 'grayscale(100%)')
       });
     });
   </script>
