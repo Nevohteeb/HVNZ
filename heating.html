@@ -50,11 +50,11 @@
     <div class="slide-cont">
       <input type="range" min="1" max="5" class="slider" id="myRange">
       <div class="fan-labels">
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        <p>4</p>
-        <p>5</p>
+        <p class="fan-text">1</p>
+        <p class="fan-text">2</p>
+        <p class="fan-text">3</p>
+        <p class="fan-text">4</p>
+        <p class="fan-text">5</p>
       </div>
     </div>
   </div>
@@ -89,6 +89,9 @@
   <!-- JQUERRY IMPORTS -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script src="js/jquery.knob.js"></script>
+
+
+<!-- CUSTOM JQUERY BEGINS -->
   <script>
     $(function() {
       $(".dial").knob({
@@ -100,17 +103,25 @@
         'cursor': 10,
         'fgColor': '#157EBD',
         'inputColor': '#157EBD',
-        'bgColor': 'pink',
+        'bgColor': 'lightgrey',
         'format': function(value) {
           return value + '°';
         }
       });
+
+      // BUTTON CLICK EVENTS BEGIN
+      // Blade button events below:
 
       $('#bladeStraight').click(function() {
         $('#bladeHalf').css('background-color', 'grey')
         $('#bladeFull').css('background-color', 'grey')
         $('#bladeHalfSvg').css('filter', 'grayscale(100%)')
         $('#bladeFullSvg').css('filter', 'grayscale(100%)')
+        $('#bladeStraightSvg').css('filter', 'grayscale(0%)')
+        $('#bladeStraight').css('background-color', '#edf2f4')
+        $('.auto-mode-btn').css('background-color', 'grey')
+        $('.section-sml-hdr').css('color', 'black')
+        $('.fan-text').css('color', 'black')
       });
 
       $('#bladeHalf').click(function() {
@@ -118,6 +129,11 @@
         $('#bladeFull').css('background-color', 'grey')
         $('#bladeStraightSvg').css('filter', 'grayscale(100%)')
         $('#bladeFullSvg').css('filter', 'grayscale(100%)')
+        $('#bladeHalfSvg').css('filter', 'grayscale(0%)')
+        $('#bladeHalf').css('background-color', '#edf2f4')
+        $('.auto-mode-btn').css('background-color', 'grey')
+        $('.section-sml-hdr').css('color', 'black')
+        $('.fan-text').css('color', 'black')
       });
 
       $('#bladeFull').click(function() {
@@ -125,6 +141,27 @@
         $('#bladeHalf').css('background-color', 'grey')
         $('#bladeStraightSvg').css('filter', 'grayscale(100%)')
         $('#bladeHalfSvg').css('filter', 'grayscale(100%)')
+        $('#bladeFullSvg').css('filter', 'grayscale(0%)')
+        $('#bladeFull').css('background-color', '#edf2f4')
+        $('.auto-mode-btn').css('background-color', 'grey')
+        $('.section-sml-hdr').css('color', 'black')
+        $('.fan-text').css('color', 'black')
+      });
+
+      // AUTO BUTTON CLICK EVENT
+
+      $('.auto-mode-btn').click(function() {
+        $('.auto-mode-btn').css('background-color', '#157EBD')
+        $('#bladeHalf').css('background-color', 'grey')
+        $('#bladeFull').css('background-color', 'grey')
+        $('#bladeStraight').css('background-color', 'grey')
+        $('#bladeHalfSvg').css('filter', 'grayscale(100%)')
+        $('#bladeFullSvg').css('filter', 'grayscale(100%)')
+        $('#bladeStraightSvg').css('filter', 'grayscale(100%)')
+        $('.slider::-webkit-slider-thumb').css('background', 'grey')
+        $('#myRange').css('background', 'grey')
+        $('.section-sml-hdr').css('color', 'grey')
+        $('.fan-text').css('color', 'grey')
       });
     });
   </script>

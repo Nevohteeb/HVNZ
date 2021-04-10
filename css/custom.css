@@ -110,7 +110,7 @@ p {
   width: 15vh;
   border-radius: 10px;
   background: linear-gradient(145deg, #feffff, #d5dadc);
-  box-shadow: 10px 10px 29px #a4a7a8, -10px  -10px 29px #ffffff; }
+  box-shadow: 10px 10px 29px #a4a7a8, -10px -10px 29px #ffffff; }
 
 .btn-link {
   text-decoration: none;
@@ -120,13 +120,13 @@ p {
   font-size: 4em;
   padding: 0.1em; }
 
-.fa-fire,
 .fa-clock-o,
+.fa-fire,
 .fa-sliders {
   color: #EA552F; }
 
-.fa-refresh,
-.fa-plus {
+.fa-plus,
+.fa-refresh {
   color: #157EBD; }
 
 #settingsIcon {
@@ -154,8 +154,8 @@ p {
 .nav-small-logo {
   height: 8vh; }
 
-.fa-home,
-.fa-cog {
+.fa-cog,
+.fa-home {
   font-size: 2em;
   color: white; }
 
@@ -182,7 +182,7 @@ p {
 
 /* HOUSE & ROOF INFO BEGINS */
 .roofhouse-cont {
-  background-image: url(../img/house-bg.svg);
+  background-image: url("../img/house-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -192,6 +192,7 @@ p {
   height: 30vh; }
 
 .roof-temp-text {
+  margin-top: 0.5em;
   color: #EA552F;
   font-size: 3.5em; }
 
@@ -216,11 +217,11 @@ p {
   height: 15px;
   border-radius: 5px;
   background: #d3d3d3;
-  box-shadow: 10px 10px 29px #a4a7a8, -10px  -10px 29px #ffffff;
+  box-shadow: 10px 10px 29px #a4a7a8, -10px -10px 29px #ffffff;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s; }
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s; }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -229,7 +230,7 @@ p {
   height: 25px;
   border-radius: 50%;
   background: #157EBD;
-  box-shadow: 10px 10px 29px #a4a7a8, -10px  -10px 29px #ffffff;
+  box-shadow: 10px 10px 29px #a4a7a8, -10px -10px 29px #ffffff;
   cursor: pointer; }
 
 .slider::-moz-range-thumb {
@@ -237,7 +238,7 @@ p {
   height: 25px;
   border-radius: 50%;
   background: #157EBD;
-  box-shadow: 10px 10px 29px #a4a7a8, -10px  -10px 29px #ffffff;
+  box-shadow: 10px 10px 29px #a4a7a8, -10px -10px 29px #ffffff;
   cursor: pointer; }
 
 .fan-labels {
@@ -262,7 +263,7 @@ p {
   width: 8vh;
   border-radius: 10px;
   background: #edf2f4;
-  box-shadow: 5px 5px 29px #a4a7a8, -5px  -5px 29px #ffffff; }
+  box-shadow: 5px 5px 29px #a4a7a8, -5px -5px 29px #ffffff; }
 
 /* AUTO & TURBO MODE BUTTONS */
 .auto-cont,
@@ -279,11 +280,11 @@ p {
   align-items: center;
   justify-content: center;
   width: 80%;
-  background-color: #157EBD;
+  background-color: grey;
   height: 8vh;
   border-radius: 30px; }
 
 .btn-text {
-  color: white; }
+  color: #edf2f4; }
 
 /*# sourceMappingURL=custom.css.map */
