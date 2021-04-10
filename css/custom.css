@@ -287,4 +287,42 @@ p {
 .btn-text {
   color: #edf2f4; }
 
+@media only screen and (min-width: 700px) {
+  /* For tablet and desktop: */
+  .btn-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .menu-btn-top {
+    width: 60%; }
+
+  .menu-btn-mid {
+    width: 60%; }
+
+  .menu-btn-btm {
+    width: 60%; }
+
+  .fan-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .fan-slider-cont {
+    width: 60%; }
+
+  .blade-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .blade-cont {
+    width: 60%; }
+
+  .auto-mode-btn {
+    width: 50%; }
+
+  .turbo-mode-btn {
+    width: 50%; } }
+
 /*# sourceMappingURL=custom.css.map */

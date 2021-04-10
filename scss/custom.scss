@@ -29,6 +29,7 @@ p {
   font-weight: 400;
   font-size: 1em;
 }
+
 /* HOMESCREEN HEADER */
 .logo-container {
   display: flex;
@@ -43,6 +44,7 @@ p {
   height: 100%;
   text-align: center;
 }
+
 /* HOMESCREEN MENU BUTTONS */
 .menu-btn-top {
   display: flex;
@@ -103,6 +105,7 @@ p {
   font-size: 4em;
   padding: 0.1em;
 }
+
 /* TOP NAV FOR MOBILE */
 .mobile-nav {
   display: flex;
@@ -131,6 +134,7 @@ p {
   font-size: 2em;
   color: white;
 }
+
 /* PAGE HEADERS ALIGNMENT */
 .page-hdr {
   height: 8vh;
@@ -146,6 +150,7 @@ p {
   justify-content: center;
   height: 4vh;
 }
+
 /* TEMPERATURE DIAL */
 .temp-dial-cont {
   display: flex;
@@ -153,6 +158,7 @@ p {
   justify-content: center;
   height: 30vh;
 }
+
 /* HOUSE & ROOF INFO BEGINS */
 .roofhouse-cont {
   background-image: url("../img/house-bg.svg");
@@ -176,6 +182,7 @@ p {
   color: $blue;
   font-size: 3.5em;
 }
+
 /* FAN SLIDER CSS */
 .fan-slider-cont {
   display: flex;
@@ -228,6 +235,7 @@ p {
   padding-top: 2vh;
 }
 /* FAN SLIDER CSS ENDS */
+
 /* BLADE BUTTON CSS */
 .blade-btns {
   display: flex;
@@ -269,4 +277,46 @@ p {
 
 .btn-text {
   color: $offwhite;
+}
+
+// MEDIA QUERRIES
+
+@media only screen and (min-width: 700px) {
+  /* For tablet and desktop: */
+  .btn-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-btn-top {
+    width: 60%;
+  }
+  .menu-btn-mid {
+    width: 60%;
+  }
+  .menu-btn-btm {
+    width: 60%;
+  }
+  .fan-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fan-slider-cont {
+    width: 60%;
+  }
+  .blade-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blade-cont {
+    width: 60%
+  }
+  .auto-mode-btn {
+    width: 50%;
+  }
+  .turbo-mode-btn {
+    width: 50%;
+  }
 }
