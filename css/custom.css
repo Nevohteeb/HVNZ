@@ -85,19 +85,19 @@ p {
 /* HOMESCREEN MENU BUTTONS */
 .menu-btn-top {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: space-around;
   height: 20vh; }
 
 .menu-btn-mid {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: space-around;
   height: 20vh; }
 
 .menu-btn-btm {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: space-around;
   height: 20vh; }
 
@@ -137,8 +137,9 @@ p {
 /* TOP NAV FOR MOBILE */
 .mobile-nav {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: space-around;
+  padding: 2vh;
   flex-direction: row;
   height: 10vh; }
 
@@ -163,20 +164,20 @@ p {
 .page-hdr {
   height: 8vh;
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center; }
 
 .section-sml-hdr {
   margin-top: 1em;
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   height: 4vh; }
 
 /* TEMPERATURE DIAL */
 .temp-dial-cont {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   height: 30vh; }
 
@@ -204,7 +205,7 @@ p {
 /* FAN SLIDER CSS */
 .fan-slider-cont {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   height: 10vh; }
 
@@ -247,11 +248,14 @@ p {
   justify-content: space-between;
   padding-top: 2vh; }
 
+.fan-labels p {
+  color: black; }
+
 /* FAN SLIDER CSS ENDS */
 /* BLADE BUTTON CSS */
 .blade-btns {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: space-around;
   height: 10vh; }
 
@@ -288,41 +292,32 @@ p {
   color: #edf2f4; }
 
 @media only screen and (min-width: 700px) {
-  /* For tablet and desktop: */
-  .btn-cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
-  .menu-btn-top {
-    width: 60%; }
-
-  .menu-btn-mid {
-    width: 60%; }
-
-  .menu-btn-btm {
-    width: 60%; }
-
-  .fan-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
-  .fan-slider-cont {
-    width: 60%; }
-
+  /* For tablet: */
+  .btn-cont,
+  .fan-section,
   .blade-section {
     display: flex;
     flex-direction: column;
     align-items: center; }
 
+  .menu-btn-top,
+  .menu-btn-mid,
+  .menu-btn-btm,
+  .fan-slider-cont,
   .blade-cont {
     width: 60%; }
 
-  .auto-mode-btn {
-    width: 50%; }
-
+  .auto-mode-btn,
   .turbo-mode-btn {
     width: 50%; } }
+@media only screen and (min-width: 1000px) {
+  /* For desktop: */
+  .btn-text,
+  h4 {
+    font-size: 1.5rem; }
+
+  .fan-section,
+  .blade-section {
+    margin: 2vh; } }
 
 /*# sourceMappingURL=custom.css.map */
